@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/colorPrimary">
+
+
+
+    <LinearLayout
+        android:layout_width="337dp"
+        android:layout_height="512dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/virus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="monospace"
+            android:text="COVID 19 SLUCAJEVI\nNA GLOBALNOJ RAZINI"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalConfirmed"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Potvrđeno slucajeva:"
+            android:textColor="@color/colorTotalConfirmed"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tvTotalConfirmed"
+            style="@style/totalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorTotalConfirmed"
+            android:textSize="40dp"
+            tools:text="162387" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalDeaths"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Ukupno umrlih:"
+            android:textColor="@color/colorTotalDeaths"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tvTotalDeaths"
+            style="@style/totalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorTotalDeaths"
+            android:textSize="40dp"
+            tools:text="75648" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalRecovered"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Ukupno oporavljenih:"
+            android:textColor="@color/colorTotalRecovered"
+            android:textSize="22dp" />
+
+
+        <TextView
+            android:id="@+id/tvTotalRecovered"
+            style="@style/totalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorTotalRecovered"
+            android:textSize="40dp"
+            tools:text="75938" />
+
+        <TextView
+            android:id="@+id/tvLastUpdated"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            tools:text="Azurirano: \n Mon, 23 Mar 2020 1:20:30 PM" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_circular_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"/>
+
+</RelativeLayout>
